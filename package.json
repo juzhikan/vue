@@ -1,10 +1,10 @@
 {
-  "name": "vue-drag",
+  "name": "vuedrag-html5",
   "version": "1.0.0",
   "description": "vue drag based on HTML5",
   "main": "dist/static/js/app.js",
   "author": "hzjuzhikuan <hzjuzhikuan@corp.netease.com>",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
