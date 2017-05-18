@@ -2,6 +2,7 @@
   "name": "vue-drag",
   "version": "1.0.0",
   "description": "vue drag based on HTML5",
+  "main": "dist/static/js/app.js",
   "author": "hzjuzhikuan <hzjuzhikuan@corp.netease.com>",
   "private": true,
   "scripts": {
