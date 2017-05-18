@@ -13,7 +13,7 @@ var env = config.build.env
 
 var webpackConfig = merge(baseWebpackConfig, {
   entry: {
-    app: './src/drag.js'
+    app: './src/drag.vue'
   },
   module: {
     rules: utils.styleLoaders({

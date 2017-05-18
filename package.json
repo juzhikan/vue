@@ -1,6 +1,6 @@
 {
   "name": "vuedrag-html5",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "vue drag based on HTML5",
   "main": "dist/static/js/app.js",
   "author": "hzjuzhikuan <hzjuzhikuan@corp.netease.com>",
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "vue": "^2.2.6",
-    "vuedrag-html5": "^1.0.2"
+    "vuedrag-html5": "^1.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",

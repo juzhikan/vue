@@ -1,4 +1,4 @@
-(function () {
+<script type="text/javascript">
   const props = {
     value: {
       type: Array,
@@ -130,7 +130,6 @@
       }
     }
   }
-  if (window.Vue) {
-    Vue.component('draggable', draggableComponent)
-  }
-})()
+  module.exports = draggableComponent
+</script>
+

@@ -9,7 +9,7 @@ npm install vuedrag-html5
 
 # use
 ```html
-<vuedraggable v-model="articles">
+<vuedrag v-model="articles">
   <template scope="props">
     <li v-for="(article, index) in articles"
     draggable="true"
@@ -17,10 +17,10 @@ npm install vuedrag-html5
       {{article.label}}<br>{{article.value}}
     </li>
   </template>
-</vuedraggable>
+</vuedrag>
 ```
 ```javascript
-import Vuedraggable from './components/vuedraggable'
+import vuedrag from 'vuedrag-html5'
 
 export default {
   name: 'app',
@@ -43,7 +43,7 @@ export default {
     }
   },
   components: {
-    Vuedraggable
+    vuedrag
   }
 }
 ```
