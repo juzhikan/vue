@@ -4,12 +4,11 @@
 
 ## Build Setup
 
-``` bash
 # install
 npm install vuedrag-html5
 
 # use
-``` html
+```html
 <vuedraggable v-model="articles">
   <template scope="props">
     <li v-for="(article, index) in articles"
@@ -20,7 +19,7 @@ npm install vuedrag-html5
   </template>
 </vuedraggable>
 ```
-``` js
+```javascript
 import Vuedraggable from './components/vuedraggable'
 
 export default {
@@ -48,5 +47,5 @@ export default {
   }
 }
 ```
-```
+## git
 For detailed [git](https://github.com/juzhikan/vue-drag)

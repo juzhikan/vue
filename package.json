@@ -1,6 +1,6 @@
 {
   "name": "vuedrag-html5",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "vue drag based on HTML5",
   "main": "dist/static/js/app.js",
   "author": "hzjuzhikuan <hzjuzhikuan@corp.netease.com>",
