@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <vuedraggable v-model="articles">
+    <vuedrag v-model="articles">
       <template scope="props">
         <li v-for="(article, index) in articles"
         draggable="true"
@@ -9,13 +9,13 @@
           {{article.label}}<br>{{article.value}}
         </li>
       </template>
-    </vuedraggable>
+    </vuedrag>
   </div>
 </template>
 
 <script>
-import Vuedraggable from './components/vuedraggable'
-
+import vuedrag from 'vuedrag-html5'
+console.log(vuedrag)
 export default {
   name: 'app',
   data () {
@@ -37,7 +37,7 @@ export default {
     }
   },
   components: {
-    Vuedraggable
+    vuedrag
   }
 }
 </script>
