@@ -5,17 +5,48 @@
 ## Build Setup
 
 ``` bash
-# install dependencies
-npm install
+# install
+npm install vuedrag-html5
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+# use
+``` html
+<vuedraggable v-model="articles">
+  <template scope="props">
+    <li v-for="(article, index) in articles"
+    draggable="true"
+    @dragstart="props.dragStart">
+      {{article.label}}<br>{{article.value}}
+    </li>
+  </template>
+</vuedraggable>
 ```
+``` js
+import Vuedraggable from './components/vuedraggable'
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+export default {
+  name: 'app',
+  data () {
+    return {
+      articles: [
+        {
+          label: '第一个',
+          value: 10
+        },
+        {
+          label: '第二个',
+          value: 20
+        },
+        {
+          label: '第三个',
+          value: 30
+        }
+      ]
+    }
+  },
+  components: {
+    Vuedraggable
+  }
+}
+```
+```
+For detailed [git](https://github.com/juzhikan/vue-drag)
