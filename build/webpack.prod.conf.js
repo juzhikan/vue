@@ -13,7 +13,7 @@ var env = config.build.env
 
 var webpackConfig = merge(baseWebpackConfig, {
   entry: {
-    app: './src/drag.vue'
+    app: './src/vuedraggable.vue'
   },
   module: {
     rules: utils.styleLoaders({
@@ -24,8 +24,11 @@ var webpackConfig = merge(baseWebpackConfig, {
   devtool: false,
   output: {
     path: config.build.assetsRoot,
-    filename: utils.assetsPath('js/[name].js'),
-    chunkFilename: utils.assetsPath('js/[id].js')
+    publicPath: '/dist/',
+    filename: 'vuedrag.js',
+    library: 'vuedrag',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   },
   plugins: [
     // http://vuejs.github.io/vue-loader/en/workflow/production.html

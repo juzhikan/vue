@@ -4383,12 +4383,12 @@ vue@^2.2.6:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.3.2.tgz#9e52aae3593480be235ff227557837e69f98203a"
 
-vuedrag-html5@^1.0.2, vuedrag-html5@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/vuedrag-html5/-/vuedrag-html5-1.0.3.tgz#1e849590c12d5dff031348694204e97566dc7f60"
+vuedrag-html5@^1.0.3, vuedrag-html5@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/vuedrag-html5/-/vuedrag-html5-1.0.4.tgz#1aadeb38bc6a66efc85c151ae219fb1aec65c8e8"
   dependencies:
     vue "^2.2.6"
-    vuedrag-html5 "^1.0.2"
+    vuedrag-html5 "^1.0.3"
 
 watchpack@^1.3.1:
   version "1.3.1"

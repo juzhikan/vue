@@ -42,9 +42,6 @@
         ]
       )
     },
-    mounted () {
-      console.log(this.$scopedSlots.default)
-    },
     methods: {
       dragStart () {
         var target = event.currentTarget
@@ -80,7 +77,6 @@
         if (dragDst > 0) {
           for (; i < dragWrpChildren.length; i++) {
             margin = this.getMargin(dragWrpChildren[i])
-            console.log(margin)
             if (i - 1 === sort) {
               judgeDst += (dragArr[i] / 2 + margin)
             } else {
