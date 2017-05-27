@@ -26,8 +26,11 @@
         {
           on: {
             dragover () {
+              var result = true
+              var beforeOver = vm._self._events.beforeOver
+              if (beforeOver) result = beforeOver[0](event)
+              if (result === false) return
               event.preventDefault()
-              vm.$emit('over', event)
             },
             drop () {
               vm.dragEnd(event)
@@ -44,13 +47,13 @@
     },
     methods: {
       dragStart () {
+        this._events.beforeStart[0](event)
         var target = event.currentTarget
         event.dataTransfer.effectAllowed = 'move'
         this.coordinateStart = {
           y: event.pageY, // pageY不会受到滚动条影响
           index: this.getOrder(target)
         }
-        this.$emit('start', event)
       },
       getOrder (node) {
         var children = node.parentNode.children
@@ -62,7 +65,7 @@
         var margin = 0
         event.preventDefault()
         var dragWrp = this.$el
-        var dragWrpChildren = dragWrp.querySelector('.j-dragItem') || dragWrp.children
+        var dragWrpChildren = dragWrp.querySelectorAll('[draggable]') || dragWrp.children
         var dragArr = []
         var sort = this.coordinateStart.index
         for (var j = 0; j < dragWrpChildren.length; j++) {
